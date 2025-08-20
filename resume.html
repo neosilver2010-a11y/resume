@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Тайбичаков Илья Викторович</title>
+    <style>
+        :root {
+            --primary-color: #000000; /* Черный */
+            --secondary-color: #ED7817; /* Оранжевый */
+            --accent-color: #E32112; /* Красный */
+            --light-gray-color: #f4f4f4;
+            --dark-gray-color: #333;
+            --text-color: #444;
+            --container-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .resume-container {
+            display: flex;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: var(--container-bg);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .left-column {
+            background: var(--primary-color);
+            color: var(--container-bg);
+            padding: 30px;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .right-column {
+            padding: 40px;
+            width: 65%;
+        }
+        .photo-container {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid var(--secondary-color);
+            margin-bottom: 20px;
+        }
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 25%; /* Центрирование фото */
+        }
+        .left-column h2 {
+            color: var(--container-bg);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            width: 100%;
+            text-align: left;
+            font-size: 1.3em;
+        }
+        .contact-info p, .skills-list li, .education p {
+            margin: 0 0 10px 0;
+            font-size: 0.95em;
+        }
+        .contact-info p strong {
+            color: var(--secondary-color);
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+        .skills-list li {
+            background: var(--dark-gray-color);
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+        }
+        .main-header {
+            margin-bottom: 30px;
+        }
+        .main-header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: var(--primary-color);
+        }
+        .main-header .position {
+            font-size: 1.5em;
+            color: var(--secondary-color);
+            margin: 0;
+            font-weight: 500;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-size: 1.6em;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .job {
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .job::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+        }
+        .job h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: var(--dark-gray-color);
+        }
+        .job .company {
+            font-weight: bold;
+            color: var(--text-color);
+        }
+        .job .period {
+            font-style: italic;
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        .job ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        .summary ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <aside class="left-column">
+            <div class="photo-container">
+                <img src="photo.jpg" alt="Фотография соискателя">
+            </div>
+            <div class="contact-info">
+                <h2>Контакты</h2>
+                <p><strong>Телефон:</strong><br>+7 (951) 615-62-07</p>
+                <p><strong>Email:</strong><br>ilya.tajbichakov@evraz.com</p>
+                <p><strong>Проживание:</strong><br>г. Новокузнецк</p>
+            </div>
+            <div class="education">
+                <h2>Образование</h2>
+                <p><strong>СибГИУ</strong> (2009)<br>Инженер, Металлургия черных металлов</p>
+            </div>
+            <div class="skills">
+                <h2>Навыки</h2>
+                <ul class="skills-list">
+                    <li>Управление проектами</li>
+                    <li>Бизнес-анализ</li>
+                    <li>Бережливое производство</li>
+                    <li>MS Office & Power BI</li>
+                    <li>Azure</li>
+                    <li>Обучение персонала</li>
+                </ul>
+            </div>
+        </aside>
+        <main class="right-column">
+            <header class="main-header">
+                <h1>Тайбичаков Илья Викторович</h1>
+                <p class="position">Старший менеджер</p>
+            </header>
+            <section class="section summary">
+                <h2>Ключевые компетенции</h2>
+                <ul>
+                    <li>Внедрение и развитие бизнес-систем, повышение организационной эффективности.</li>
+                    <li>Руководство проектами по оптимизации производственных процессов и цифровой трансформации.</li>
+                    <li>Применение инструментов бережливого производства (Lean, 5S).</li>
+                    <li>Экспертные знания в области металлургии черных металлов.</li>
+                    <li>Разработка и реализация инициатив по развитию систем управления производством.</li>
+                </ul>
+            </section>
+            <section class="section experience">
+                <h2>Опыт работы</h2>
+                <div class="job">
+                    <h3>Старший менеджер, центр развития бизнес-системы</h3>
+                    <p class="company">АО "ЕВРАЗ Объединенный ЗСМК", г. Новокузнецк</p>
+                    <p class="period">Март 2025 — настоящее время</p>
+                </div>
+                <div class="job">
+                    <h3>Менеджер по развитию бизнес-системы</h3>
+                    <p class="company">АО "ЕВРАЗ ЗСМК" / ООО "ЕВРАЗ", г. Новокузнецк</p>
+                    <p class="period">Ноябрь 2021 — Март 2025</p>
+                </div>
+                <div class="job">
+                    <h3>Менеджер, проектная группа</h3>
+                    <p class="company">ООО "ЕВРАЗ", филиал Новокузнецк</p>
+                    <p class="period">Июнь 2021 — Ноябрь 2021</p>
+                </div>
+                <div class="job">
+                    <h3>Мастер, горячие участки работ</h3>
+                    <p class="company">АО "ЕВРАЗ ЗСМК", г. Новокузнецк</p>
+                    <p class="period">Ноябрь 2015 — Июнь 2021</p>
+                    <ul>
+                        <li>Контроль охраны труда и промышленной безопасности.</li>
+                        <li>Обеспечение ритмичной работы производственного участка.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Технолог 2 категории</h3>
+                    <p class="company">ОАО "Новосибирский стрелочный завод"</p>
+                    <p class="period">Август 2009 — Март 2012</p>
+                     <ul>
+                        <li>Контроль технологии выплавки стали.</li>
+                        <li>Разработка технологической документации.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
